@@ -119,5 +119,83 @@ login(userid,userpw);
 */
 
 
+//실습5
+/*
+function testAvg(arrData){
+
+    var sum = 0;
+    for (var i = 0; i < arrData.length; i++){
+
+        sum += Number(prompt(arrData[i] + "점수는?","0"));
+
+    }
+
+    var avg = sum / arrData.length;
+    return avg;
+
+}
+
+var arrSubject = ["국어","수학"];
+var result = testAvg(arrSubject);
+
+document.write("평균 점수는 "+ result + " 입니다.");
+*/
+
+//실습6
+/*
+var num = 1;
+function gallery(direct){
+
+    if(direct){
+        if(num == 8) return;
+        num++;
+    }else{
+        if(num == 1) return;
+        num--;
+    }
+
+
+    var imgTag = document.getElementById("photo");
+    imgTag.setAttribute("src","images/pic_"+num+".jpg");
+
+}
+
+*/
+
+//재귀 함수 호출
+
+/*
+function myFnc(){
+
+    코드;
+    myFnc();
+
+}
+
+myFnc();
+*/
+
+
+//실습7
+
+/*
+
+var num = 0;
+function testFnc(){
+
+    num++;
+    document.write(num,"<br>");
+    if(num == 10) return;
+    testFnc();
+}
+
+testFnc(); 
+
+
+//함수 스코프
+//
+
+
+
 
 
