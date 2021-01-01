@@ -392,6 +392,28 @@ bodyTag.style.backgroundColor = arrColor[arrNum];
 */
 
 
+function TestScore(name, kor, eng){
+    this.userName = name;
+    this.korNum = kor;
+    this.engNum = eng;
 
+    TestScore.prototype.getTestInfo = function(){
+        document.write("이름: " + this.userName,"<br>");
+        document.write("국어: " + this.korNum,"<br>");
+        document.write("영어: " + this.engNum,"<br>");
+    }
+    TestScore.prototype.getAvg = function(){
+        return (this.korNum + this.engNum) / 2;
+    }
 
+}
+
+var kingun = new TestScore("김군",80,90);
+var ohgun = new TestScore("오군",100,80);
+
+kingun.getTestInfo();
+document.write("avg:" + kingun.getAvg(),"<br><br>");
+
+ohgun.getTestInfo();
+document.write("avg:" + ohgun.getAvg(),"<br><br>");
 
