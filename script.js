@@ -191,9 +191,11 @@ function testFnc(){
 
 testFnc(); 
 
-
+*/
 //함수 스코프
 //
+
+//Ajax Method
 
 
 
